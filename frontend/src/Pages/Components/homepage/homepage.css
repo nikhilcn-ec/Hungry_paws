@@ -1,0 +1,72 @@
+:root{
+    --header-height:3rem;
+    --nav-width:250px;   
+    --scroll-bar-color:#fff;
+    --scroll-bar-bg-color:#00091a;
+}
+main{  
+    height:100vh;
+    position:relative;   
+    margin: var(--header-height) 0 0 0;
+    padding:0.1rem;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.5s;
+}
+.content{
+    width:75%;    
+    margin: 5% 10% 10% 10%;
+}
+
+
+
+.sidebar{
+    height:100%;
+    top:0;
+    left:0;
+    width:var(--nav-width);
+    background-color: #00091a;
+    color:#fff;
+    flex-direction: column;
+    flex-shrink: 0;/* doubt need to be researched */   
+    position:fixed;   
+    transition: .5s;
+    overflow-y: scroll;    
+    overflow-x: hidden;
+}
+.spaceToggle{
+    padding-left: calc(var(--nav-width) + 0px);
+    display: flex;
+}
+.toggleIcon{  
+    font-size: 45px;    
+    color:white;    
+}
+::-webkit-scrollbar-corner { 
+    background: rgba(0,0,0,0.5);
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 3px solid var(--scroll-bar-bg-color);
+}
+
+   
+
+
+

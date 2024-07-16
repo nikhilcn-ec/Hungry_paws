@@ -1,0 +1,63 @@
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.app-bar {
+  background-color: #8e519d;
+  /* padding: 10px; */
+  padding: -6px;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 0 calc(33.3333% - 20px);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}

@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    padding: 10px;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar-item a:hover {
+    text-decoration: underline;
+  }
